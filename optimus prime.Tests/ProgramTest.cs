@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
+using Optimus.Prime;
 
-namespace optimus prime.Tests
+namespace Optimus.Prime.Tests
 {
     [TestFixture]
     public class ProgramTest

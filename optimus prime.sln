@@ -1,16 +1,15 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "optimus prime", "optimus prime\optimus prime.csproj", "{E12B4A50-E37C-11E7-B497-597394A8DB8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimus.Prime", "optimus prime\Optimus.Prime.csproj", "{E12B4A50-E37C-11E7-B497-597394A8DB8C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{E12B4A51-E37C-11E7-B497-597394A8DB8C}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "optimus prime.Tests", "optimus prime.Tests\optimus prime.Tests.csproj", "{E12B4A52-E37C-11E7-B497-597394A8DB8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimus.Prime.Tests", "optimus prime.Tests\Optimus.Prime.Tests.csproj", "{E12B4A52-E37C-11E7-B497-597394A8DB8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,5 +28,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A82F4F38-EBBD-48C0-880B-1445FF0B6EBB}
 	EndGlobalSection
 EndGlobal
