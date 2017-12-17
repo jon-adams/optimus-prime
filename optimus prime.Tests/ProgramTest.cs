@@ -4,16 +4,12 @@ using System.Linq;
 using NUnit.Framework;
 using Optimus.Prime;
 
-namespace Optimus.Prime.Tests
-{
+namespace Optimus.Prime.Tests {
     [TestFixture]
-    public class ProgramTest
-    {
+    public class ProgramTest {
         [Test]
-        public void Test()
-        {
-            Program program = new Program();
-            Assert.IsNotNull(program);
+        public void Test() {
+            Assert.DoesNotThrow(() => Program.Main(new[] { "1" }));
         }
     }
 }

@@ -1,15 +1,15 @@
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Optimus.Prime")]
+[assembly: AssemblyTitle("Optimus.Prime.Services")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Firetiger")]
-[assembly: AssemblyProduct("Optimus.Prime")]
+[assembly: AssemblyProduct("Optimus.Prime.Services")]
 [assembly: AssemblyCopyright("Copyright © Firetiger 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("E12B4A50-E37C-11E7-B497-597394A8DB8C")]
+[assembly: Guid("625e5f65-1fe1-4da8-8e73-c791da71c65b")]
 
 // Version information for an assembly consists of the following four values:
 //

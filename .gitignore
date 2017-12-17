@@ -13,9 +13,7 @@
 **/packages/*
 
 # Others
-.sass-cache/
-node_modules/
-bower_components/
+.axoCover
 ~$*
 *~
 [Tt]humbs.db
