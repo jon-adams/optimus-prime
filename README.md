@@ -2,6 +2,25 @@
 
 A little prime number factoring app.
 
+## Installation
+
+Windows installation with .Net 4.5 is required.
+
+The standard .Net 4.5 development tools may also be required to run the coverage and tests yourself. 
+
+* Clone or otherwise acquire the repository
+
+## Usage
+
+* Build the solution in Visual Studio (or any .Net console build tool)
+* Run the resulting `Optimus.Prime.exe` passing in the following arguments:
+  * the first number for the inclusive range for a prime number check 
+  * the second number for the inclusive range for a prime number check
+
+### Unit tests and Coverage report
+
+* To run the code coverage, run `cover.bat`   
+
 ## Requirements
 
 * implement a prime number generator
