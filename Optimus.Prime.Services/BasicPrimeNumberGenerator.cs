@@ -23,7 +23,7 @@ namespace Optimus.Prime.Services {
 
             // loop through each value in range; does not store previously calculated primes on each run.
             // WILDLY inefficient! Demonstration purposes only.
-            return Enumerable.Range(start, end).Where(x => isPrime(x)).ToList();
+            return Enumerable.Range(start, end - start + 1).Where(x => isPrime(x)).ToList();
         }
 
         // I'm not a mathematician. This is my port of the pseudo-code for a basic engine from https://en.wikipedia.org/wiki/Primality_test
