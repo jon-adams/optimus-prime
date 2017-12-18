@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SieveOfEratosthenesPrimeNumberGeneratorTest.cs" />
     <Compile Include="BasicPrimeNumberGeneratorTest.cs" />
     <Compile Include="ProgramTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

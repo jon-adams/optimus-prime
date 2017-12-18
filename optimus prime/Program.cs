@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using Optimus.Prime.Services;
 
 namespace Optimus.Prime {
@@ -18,14 +19,23 @@ namespace Optimus.Prime {
                 return;
             }
 
+            // normalize algorithm argument, if available
+            var thirdArg = args.Length > 2 ? args[2]?.Trim()?.ToLowerInvariant() : null;
+
             // pick a generator
-            // TODO: load alternate generator if requested
-            IPrimeNumberGenerator generator = new BasicPrimeNumberGenerator();
+            var generator = thirdArg == "alternate" || thirdArg == "a" || thirdArg == "eratosthenes"
+                            ? (IPrimeNumberGenerator)new SieveOfEratosthenesPrimeNumberGenerator()
+                            : new BasicPrimeNumberGenerator();
 
             // start generating
+            var stopwatch = new Stopwatch();
+
+            stopwatch.Start();
             var results = generator.generate(first, second);
+            stopwatch.Stop();
 
             Console.WriteLine(string.Join(", ", results));
+            Console.WriteLine("\nResults generated in {0}ms ({1} ticks)", stopwatch.ElapsedMilliseconds, stopwatch.ElapsedTicks);
         }
     }
 }

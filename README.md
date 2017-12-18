@@ -16,6 +16,14 @@ The standard .Net 4.5.1 development tools may also be required to run the covera
 * Run the resulting `Optimus.Prime.exe` passing in the following arguments:
   * the first number for the inclusive range for a prime number check 
   * the second number for the inclusive range for a prime number check
+  * "alternate", "a", or "eratosthenes" for a third parameter to use the alternate "Sieve of Eratosthenes" algorithm
+
+Example:
+
+`"optimus prime\bin\Debug\Optimus.Prime.exe" 1 21234`
+or
+`"optimus prime\bin\Debug\Optimus.Prime.exe" 7900 7920 alternate`
+ 
 
 ### Unit tests and Coverage report
 
@@ -39,7 +47,7 @@ To run the tests and the code coverage report over them:
 
 * ✓ yeoman template
 * ✓ update libraries but stick to default .Net framework level for the ease of the consumer
-* setup coverage tool and script to run it
-* tdd test setup
-* implement basic/brute force prime number
+* ✓ setup coverage tool and script to run it
+* ✓ TDD test setup
+* ✓ implement basic/brute force prime number
 * throw in faster Sieve of Eratosthenes implementation?
