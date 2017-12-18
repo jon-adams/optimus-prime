@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 
 namespace Optimus.Prime.Tests {
@@ -15,6 +16,11 @@ namespace Optimus.Prime.Tests {
         }
 
         [Test]
+        public void TestInvalidInt() {
+            Assert.DoesNotThrow(() => Program.Main(new[] { (11L + Int32.MaxValue).ToString(), "not a number" }));
+        }
+
+        [Test]
         public void TestOptionalButInvalidArgs() {
             Assert.DoesNotThrow(() => Program.Main(new[] { "1", "2", "someval" }));
         }
@@ -26,7 +32,12 @@ namespace Optimus.Prime.Tests {
 
         [Test]
         public void TestOptionalArgs() {
-            Assert.DoesNotThrow(() => Program.Main(new[] { "2", "1", "r" }));
+            Assert.DoesNotThrow(() => Program.Main(new[] { "2", "1", "alternate" }));
+        }
+
+        [Test]
+        public void TestRaceArgs() {
+            Assert.DoesNotThrow(() => Program.Main(new[] { "20002", "1", "race" }));
         }
     }
 }

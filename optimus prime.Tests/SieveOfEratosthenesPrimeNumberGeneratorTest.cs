@@ -67,5 +67,12 @@ namespace Optimus.Prime.Tests {
                 generator.generate(7900, 7920),
                 "Prime number results for the range of 7900<=>7920 did not match expected");
         }
+
+        [Test]
+        public void TestMatchWithBasicGenerator() {
+            Assert.AreEqual(new BasicPrimeNumberGenerator().generate(20010, 21120),
+                new SieveOfEratosthenesPrimeNumberGenerator().generate(20010, 21120),
+                "Prime number BasicPrimeNumberGenerator and SieveOfEratosthenesPrimeNumberGenerator did not match results");
+        }
     }
 }
