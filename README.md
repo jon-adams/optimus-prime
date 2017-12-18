@@ -4,9 +4,9 @@ A little prime number factoring app.
 
 ## Installation
 
-Windows installation with .Net 4.5 is required.
+Windows installation with .Net 4.5.1 or newer is required.
 
-The standard .Net 4.5 development tools may also be required to run the coverage and tests yourself. 
+The standard .Net 4.5.1 development tools may also be required to run the coverage and tests yourself. 
 
 * Clone or otherwise acquire the repository
 
@@ -19,7 +19,10 @@ The standard .Net 4.5 development tools may also be required to run the coverage
 
 ### Unit tests and Coverage report
 
-* To run the code coverage, run `cover.bat`   
+To run the tests and the code coverage report over them:
+
+* Compile the project in Debug mode
+* Run `cover.bat`   
 
 ## Requirements
 

@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicPrimeNumberGeneratorTest.cs" />
     <Compile Include="ProgramTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +65,10 @@
     <ProjectReference Include="..\optimus prime\Optimus.Prime.csproj">
       <Project>{E12B4A50-E37C-11E7-B497-597394A8DB8C}</Project>
       <Name>Optimus.Prime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Optimus.Prime.Services\Optimus.Prime.Services.csproj">
+      <Project>{625e5f65-1fe1-4da8-8e73-c791da71c65b}</Project>
+      <Name>Optimus.Prime.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
