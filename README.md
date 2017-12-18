@@ -12,26 +12,26 @@ The standard .Net 4.5.1 development tools may also be required to run the covera
 
 ## Usage
 
-* Build the solution in Visual Studio (or any .Net console build tool)
-* Run the resulting `Optimus.Prime.exe` passing in the following arguments:
+* Run the pre-compiled `dist/Optimus.Prime.exe` passing in the following arguments:
   * the first number for the inclusive range for a prime number check 
   * the second number for the inclusive range for a prime number check
   * "alternate", "a", or "eratosthenes" for a third parameter to use the alternate "Sieve of Eratosthenes" algorithm
-  * for fun, use "race" as the third argument to see which algorithm is faster for different max prime values; does not output the list since it can get long and it is more about the timing comparison than the results in this case
+  * or for fun, instead use "race" as the third argument to see which algorithm is faster for different max prime values—the race does not output the entire prime list it generates since this mode is more about the timing comparison than the results
 
 Example:
 
-`"optimus prime\bin\Debug\Optimus.Prime.exe" 1 21234`
+`"dist\Optimus.Prime.exe" 1 21234`
 or
-`"optimus prime\bin\Debug\Optimus.Prime.exe" 7900 7920 alternate`
+`"dist\Optimus.Prime.exe" 7900 7920 alternate`
 or
-`"optimus prime\bin\Debug\Optimus.Prime.exe" 800000 2147483647 race`
+`"dist\Optimus.Prime.exe" 1 30000000 race`
  
 
 ### Unit tests and Coverage report
 
 To run the tests and the code coverage report over them:
 
+* Build the solution in Visual Studio (or any .Net console build tool)
 * Compile the project in Debug mode
 * Run `cover.bat`   
 
@@ -54,4 +54,4 @@ To run the tests and the code coverage report over them:
 * ✓ TDD test setup
 * ✓ implement basic/brute force prime number
 * ✓ throw in faster Sieve of Eratosthenes implementation
-* for fun, throw in some parallelization so it uses more than one CPU core
+* for fun, maybe throw in some parallelization so it uses more than one CPU core?
