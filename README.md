@@ -15,7 +15,7 @@ The standard .Net 4.5.1 development tools may also be required to run the covera
 * Run the pre-compiled `dist/Optimus.Prime.exe` passing in the following arguments:
   * the first number for the inclusive range for a prime number check 
   * the second number for the inclusive range for a prime number check
-  * "alternate", "a", or "eratosthenes" for a third parameter to use the alternate "Sieve of Eratosthenes" algorithm
+  * "alternate", "a", or "eratosthenes" for a third parameter to use the alternate [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) algorithm
   * or for fun, instead use "race" as the third argument to see which algorithm is faster for different max prime values—the race does not output the entire prime list it generates since this mode is more about the timing comparison than the results
 
 Example:
@@ -52,6 +52,6 @@ To run the tests and the code coverage report over them:
 * ✓ update libraries but stick to default .Net framework level for the ease of the consumer
 * ✓ setup coverage tool and script to run it
 * ✓ TDD test setup
-* ✓ implement basic/brute force prime number
+* ✓ implement [basic/brute force prime number](https://en.wikipedia.org/wiki/Primality_test)
 * ✓ throw in faster Sieve of Eratosthenes implementation
 * for fun, maybe throw in some parallelization so it uses more than one CPU core?
