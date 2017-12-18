@@ -50,4 +50,4 @@ To run the tests and the code coverage report over them:
 * ✓ setup coverage tool and script to run it
 * ✓ TDD test setup
 * ✓ implement basic/brute force prime number
-* throw in faster Sieve of Eratosthenes implementation?
+* ✓ throw in faster Sieve of Eratosthenes implementation?
