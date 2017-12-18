@@ -16,7 +16,10 @@ namespace Optimus.Prime.Services {
         /// <summary>
         ///     Determines if the specified integer is a prime
         /// </summary>
-        /// <param name="value">a value to check</param>
+        /// <param name="value">
+        ///     a value to check; demo requirements didn't specify if negatives should be normalized to absolute or
+        ///     not, so deciding to have value less than 2 always return false)
+        /// </param>
         /// <returns>true if the integer is prime; false otherwise</returns>
         bool isPrime(int value);
     }

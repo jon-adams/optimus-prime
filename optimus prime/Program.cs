@@ -1,8 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Optimus.Prime.Services;
 
 namespace Optimus.Prime {
     class Program {
@@ -17,7 +14,8 @@ namespace Optimus.Prime {
 
             // TODO: create requested algorithm runner
                         
-            var results = new List<int>(); // TODO: start algorithm instead of this stub
+            // start generating
+            var results = new BasicPrimeNumberGenerator().generate(1, 10);
 
             Console.WriteLine(string.Join(", ", results));
         }
