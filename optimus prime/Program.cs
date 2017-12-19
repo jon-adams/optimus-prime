@@ -7,12 +7,14 @@ namespace Optimus.Prime {
         public static void Main(string[] args) {
             int first, second;
             string third;
-            ParseArgs(args, Console.WriteLine, out first, out second, out third);
+            if (!ParseArgs(args, Console.WriteLine, out first, out second, out third)) {
+                return;
+            }
 
             Execute(Console.WriteLine, first, second, third);
         }
 
-        internal static void ParseArgs(string[] args, Action<string> output, out int first, out int second, out string third) {
+        internal static bool ParseArgs(string[] args, Action<string> output, out int first, out int second, out string third) {
             first = -1;
             second = -1;
             third = "";
@@ -20,17 +22,18 @@ namespace Optimus.Prime {
             // `args` should accept two integers for a range; an optional third integer may select the generator to use
             if (args.Length < 2) {
                 output("Must include two positive integers for an inclusive range to check for primes");
-                return;
+                return false;
             }
 
             if (!int.TryParse(args[0], out first) ||
                 !int.TryParse(args[1], out second)) {
                 output("Must include two positive integers (32-bit max) for an inclusive range to check for primes");
-                return;
+                return false;
             }
 
             // normalize algorithm argument, if available
             third = args.Length > 2 ? args[2].Trim().ToLowerInvariant() : null;
+            return true;
         }
 
         internal static void Execute(Action<string, object, object> output, int first, int second, string third) {
